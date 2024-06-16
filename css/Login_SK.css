@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    background-image: url("../image/sinupbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+.fromebox{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 50px 60px 70px;
+    text-align: center;
+    align-self: center;
+}
+.input{
+
+    padding: 10px;
+    
+}
+.login{
+    font-size: 30px;
+    font-family: Sora ,'sans';
+    color: rgb(255, 70, 3);
+}
+input{
+    padding: 15px 10px;
+    width: 50vh;
+    font-family: Poppins , 'sans';
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(255, 211, 211);
+}
+i {
+    margin: 15px;
+    color: rgb(90, 88, 88);
+}
+input:focus{
+    outline: none;
+}
+form p{
+    font-family: Poppins , 'sans';
+    font-size: 15px;
+   
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    
+    
+}
+button{
+    margin: 10px;
+    padding: 15px;
+    width: 20vh;
+    background-color: rgb(255, 47, 0);
+    border-style: none;
+    border-radius: 20px;
+    font-size: 15px;
+    color: aliceblue;
+    font-family: Poppins , 'sans';
+    transition: color 0.3s ease , background-color 0.3s ease;
+}
+button:hover{
+    color:  rgb(255, 47, 0);
+    background-color: rgb(237, 237, 237);
+}
+.click{
+    text-decoration: none;
+    color: rgb(255, 23, 23);
+}
+.click:hover{
+    color: black;
+}
+.errorbox{
+    background-color: red;
+    padding: 10px;
+    color:aliceblue;
+    font-family:monospace;
+    border-radius: 20px;
+}

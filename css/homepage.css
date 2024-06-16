@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: rgb(216, 216, 216);
+    overflow-y: scroll;
+}
+
+.logoimg{
+    width: 100px;
+    height: 54px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+header{
+    display: flex;
+    padding-block: 5px;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-block-end: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;  /*property ensures that the header appears on top of other elements.*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #ff6f00;
+}
+.navi li {
+    display: inline-block;
+    margin-right: 20px;
+    font-family:Sora,'sans';
+    
+}
+.contact {
+    padding: 12px;
+    background-image: linear-gradient(45deg, #ff6f00, #ff0055);
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    color: aliceblue;
+  }
+  a:hover{
+    color: #c80404;
+  }
+  .contact:hover{
+    color: #000000;
+    
+  }
+  .theam {
+    font-size: 70px;
+    font-family: Montserrat, sans-serif;
+    padding-left: 20px;
+}
+.theam2 {
+    font-size: 50px;
+    font-family: Montserrat, sans-serif;
+    padding-left: 15px;
+}
+
+.highlight1 {
+    color: #ff0000;
+}
+
+.divtheam {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imglap {
+    width: 600px;
+    height: 370px;
+    margin-right: 50px;
+    position: absolute;
+    right: -45px;
+    top: 90px;
+}
+
+/* Media Query for responsive layout */
+@media (max-width: 768px) {
+    .divtheam {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imglap {
+        position: static;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
+.divbrands{
+    background-color: #ac0101;
+    width: 100%;
+    height: 250px;
+    border-block-end:15px;
+    position:static;
+    left: 0; /*deptathata ida tynne nthi wenna*/
+    align-items: center;
+}
+.pbrand {
+    color: azure;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.ulbrands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.librands {
+    position: relative;
+    top : -20px;
+    margin-right: 20px;
+    list-style: none; /* Remove default list styles */
+}
+
+.bimg1,
+.bimg2
+ {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}
+.bimg3{
+    height: 140px;
+}
+.bimg4{
+    height: 100px;
+}
+.bimg5{
+    width: 350px;
+    height: 90px;
+}
+.footer{
+    margin: 50px;
+}
+.mobi{
+    width: 700px;
+}
+.divtheam{
+    display:flex;
+}
+.why{
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+}
+footer {
+    
+    background-color: rgb(37, 37, 37); /* Replace with your desired background color */
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    z-index: 100;  /*property ensures that the header appears on top of other elements.*/
+    justify-content: flex-start;
+  }
+  .pfooter{
+    padding-top: 20px;
+    font-size: 25px;
+    float: left;
+    font-family: Poppins,sans-serif;
+  }
+  .emailform{
+    position: relative;
+    top: 100px;
+    right: 280px;
+  }
+  .emailin{
+    padding: 10px;
+    width: 350px;
+    position: absolute;
+    right: 660px;
+    font-family:  Poppins,sans-serif;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    @media (max-width: 768px) {
+        position: fixed;
+        top: 50px;
+        right: 20px;
+      }
+  }
+  .emailin:focus {
+    outline: none; /* Remove the default focus outline */
+  }
+  
+.emailsend  {
+border-style: none;
+padding: 11.5px;
+position: absolute;
+right: 644px;
+background-color: #c80404;
+color: #ffffff;
+font-family:Poppins,sans-serif ;
+border-radius: 30px;
+width: 100px;
+
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+transition: color 0.3s ease;
+  }
+  .emailin:hover{
+    
+    background-color: antiquewhite;
+    border-radius: 30px;
+    border-style: none;
+    padding: 10px;
+    
+  }
+.emailsend:hover{
+   color: #333333;
+}
+
+.footerdiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.h1div{
+    font-family: Poppins,'sans';
+    font-size: 20px;
+
+}
+.socialMedia{
+    position: relative;
+    left: -5%;
+    margin: 10px;
+}
+.classsocial{
+    font-size: 30px;
+    margin-left: 10px;
+    justify-content: center;
+}
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -3vh;
+  }
+
+  .address i {
+    margin-right: 10px;
+  }
+  .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top : -8vh;
+  }
+
+  .email i {
+    margin-right: 10px;
+  }
+  .footerullink a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+  }
+.footerullink li{
+    list-style: none;
+    position: relative;
+}
+.ad ,.user{
+    position: relative;
+    left: -10%;
+   
+}
+.footerclose{
+    position: relative;
+    top: -50%;
+    font-size: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    padding: 10px 10px;
+}
+.h1div{
+    justify-content: center;
+}
